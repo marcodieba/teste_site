@@ -7,6 +7,7 @@ import { useLanguage } from '../../context/LanguageContext';
 // 1. Importe a imagem base do monitor (a que você já usa)
 import heroMonitorBase from '../../assets/images/hero-monitor-base.jpg'; // <-- Confirme o nome
 
+import heroLogo from '../../assets/images/logo.png';
 // 2. Importe as NOVAS imagens que vão passar dentro da tela
 // (Certifique-se de que essas imagens existem na pasta)
 import slide1 from '../../assets/images/hero-slide-1.jpg';
@@ -37,7 +38,14 @@ const Hero = () => {
   return (
     <section className="hero-container">
       <div className="hero-text-content">
-        <h1 className="hero-title">{t('hero.title')}</h1>
+        <h1 className="hero-title">
+          <img 
+            src={heroLogo} 
+            alt="Monitor CR Leather" 
+            className="hero-logo-image" 
+          />
+          {/* {t('hero.title')} */}
+          </h1>
         <p className="hero-subtitle">{t('hero.subtitle')}</p>
       </div>
 

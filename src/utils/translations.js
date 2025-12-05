@@ -8,6 +8,7 @@ export const translations = {
       buy: "Compre on-line",
       news: "Newsletter",
       contact: "Contato",
+      fone: "FONE:(51) 3561-0400",
       cta: "Entre em Contato"
     },
     hero: {
@@ -88,6 +89,7 @@ export const translations = {
       buy: "Shop Online",
       news: "Newsletter",
       contact: "Contact",
+      fone: "PHONE:(51) 3561-0400",
       cta: "Get in Touch"
     },
     hero: {
@@ -172,6 +174,7 @@ export const translations = {
       buy: "Compra online",
       news: "Boletín",
       contact: "Contacto",
+      fone: "TELÉFONO:(51) 3561-0400",
       cta: "Ponerse en contacto"
     },
     hero: {

@@ -61,7 +61,7 @@ const MainContent = () => {
       
       {/* Link: #contato (Contato) */}
       <section id="contato">
-        <PillarsSection />
+        {/* <PillarsSection /> */}
         <QuoteBanner />
         {/* <ContactBanner /> */}
       </section>

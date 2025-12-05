@@ -19,6 +19,8 @@
   font-size: 3.5rem;
   font-weight: 900;
   color: #131A35; /* Cor Nova */
+  text-align: -webkit-center;
+  /* text-align: center; */
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0;

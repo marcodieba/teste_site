@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { useLanguage } from '../../context/LanguageContext';
+import { translations } from '../../utils/translations';
 
 const Header = () => {
   const { t, changeLanguage, lang } = useLanguage();
@@ -74,6 +75,7 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
+          <strong>{t('header.fone')}</strong>
           <FlagSelector />
           {/* Também no botão CTA */}
           <a href="#contato" className="cta-button" onClick={(e) => handleLinkClick(e, 'contato')}>{t('header.cta')}</a>

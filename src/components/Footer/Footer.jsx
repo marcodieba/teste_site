@@ -20,10 +20,10 @@ const Footer = () => {
             </p>
         </p>
         <div className="footer-socials">
-          <a href="#"><FaInstagram /></a>
-          <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaWhatsapp /></a>
-          <a href="#"><FaLinkedin /></a>
+          <a href="https://www.instagram.com/crleather.oficial?igsh=Z3NqZmJ5M3QwYjhn"><FaInstagram /></a>
+          <a href="https://www.facebook.com/profile.php?id=61584589740483&sk=about_details"><FaFacebookF /></a>
+          <a href="https://api.whatsapp.com/send/?phone=%2B555191058556&text&type=phone_number&app_absent=0"><FaWhatsapp /></a>
+          <a href="https://www.linkedin.com/company/cr-leather"><FaLinkedin /></a>
         </div>
       </div>
     </footer>
