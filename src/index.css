@@ -1,0 +1,43 @@
+/* src/index.css */
+/* src/index.css */
+
+:root {
+  --primary-color: #131A35;
+}
+
+html {
+  scroll-behavior: smooth; /* <--- ADICIONE ISTO! Faz o efeito de deslizar */
+}
+
+/* ... resto do arquivo ... */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  
+  /* APLICANDO A NOVA COR GLOBALMENTE */
+  color: var(--primary-color);
+  -webkit-font-smoothing: antialiased; /* Deixa a fonte mais nítida */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Garante que todos os títulos usem a nova cor */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+/* Links também */
+a {
+  color: var(--primary-color);
+}

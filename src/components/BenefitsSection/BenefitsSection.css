@@ -1,0 +1,96 @@
+/* src/components/BenefitsSection/BenefitsSection.css */
+
+.benefits-container {
+  /* Correção de alinhamento: centraliza e limita largura */
+  max-width: 1300px;
+  margin: 0 auto 2rem auto;
+  padding: 3rem 1.5rem;
+  width: 100%;
+}
+
+/* --- Cabeçalho --- */
+.benefits-header {
+  margin-bottom: 3rem;
+  padding-left: 0.5rem;
+}
+
+.benefits-tag {
+  color: #131A35; /* Cor Nova */
+  font-size: 0.9rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.benefits-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #131A35; /* Cor Nova */
+  margin: 0.5rem 0;
+}
+
+.benefits-slogan {
+  font-size: 1rem;
+  color: #131A35; /* Cor Nova */
+  opacity: 0.7;
+}
+
+/* --- Grade (Mobile First) --- */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 coluna no mobile */
+  gap: 2.5rem;
+}
+
+/* --- Itens da Grade --- */
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #131A35; /* Cor Nova */
+}
+
+.benefit-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #131A35; /* Cor Nova */
+  margin-bottom: 1rem;
+}
+
+.benefit-text {
+  font-size: 0.95rem;
+  color: #131A35; /* Cor Nova */
+  opacity: 0.8;
+  line-height: 1.7;
+}
+
+.benefit-text + .benefit-text {
+  margin-top: 1rem;
+}
+
+/* --- Media Query para Tablet --- */
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 2rem;
+  }
+}
+
+/* --- Media Query para Desktop --- */
+@media (min-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr); /* 4 colunas */
+    gap: 1.5rem;
+  }
+
+  .benefits-container {
+    padding: 4rem 2rem;
+  }
+
+  .benefits-title {
+    font-size: 3.5rem;
+  }
+}

@@ -1,0 +1,84 @@
+/* src/components/ECommerceSection/ECommerceSection.css */
+
+.ecommerce-container {
+  max-width: 1300px;
+  margin: 0 auto 4rem auto;
+  padding: 0 1.5rem;
+}
+
+/* 1. A LINHA FINA */
+.ecommerce-divider {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+  margin-bottom: 4rem; /* Bastante espaço após a linha */
+}
+
+/* 2. O CONTEÚDO CENTRALIZADO */
+.ecommerce-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza tudo */
+  text-align: center;
+  max-width: 700px; /* Limita a largura do texto */
+  margin: 0 auto; /* Centraliza o bloco de conteúdo */
+}
+
+.ecommerce-tag {
+  color: #6a704c; /* Verde-oliva do design */
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.ecommerce-title {
+  /* Fonte serifada bonita, como na imagem */
+  font-family: "Times New Roman", Times, serif; 
+  font-size: 3.5rem;
+  font-weight: 400; /* Não é bold */
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.ecommerce-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.ecommerce-button {
+  display: inline-block;
+  background-color: #e0eac7; /* Verde-claro */
+  color: #333; /* Texto escuro */
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 99px; /* Formato de pílula */
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.05em; /* Leve espaçamento */
+  transition: all 0.3s ease;
+}
+
+.ecommerce-button:hover {
+  background-color: #d1ddaF; /* Um pouco mais escuro */
+  transform: translateY(-2px); /* Efeito de "levantar" */
+}
+
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+  .ecommerce-title {
+    font-size: 2.5rem;
+  }
+  .ecommerce-subtitle {
+    font-size: 1rem;
+  }
+  .ecommerce-container {
+     margin-bottom: 3rem;
+  }
+  .ecommerce-divider {
+    margin-bottom: 3rem;
+  }
+}

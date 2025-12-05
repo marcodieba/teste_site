@@ -1,0 +1,22 @@
+/* src/components/QuoteBanner/QuoteBanner.css */
+
+.quote-banner-container {
+  background-color: #f7f3ef; 
+  padding: 4rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.quote-banner-text {
+  max-width: 900px; 
+  margin: 0 auto; 
+  text-align: center;
+  font-size: 1.8rem; 
+  font-weight: 600;
+  line-height: 1.4; 
+  color: #131A35; /* COR NOVA */
+}
+
+@media (max-width: 768px) {
+  .quote-banner-container { padding: 3rem 1.5rem; }
+  .quote-banner-text { font-size: 1.5rem; }
+}

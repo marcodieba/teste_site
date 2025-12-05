@@ -1,0 +1,95 @@
+/* src/components/PillarsSection/PillarsSection.css */
+
+.pillars-container {
+  max-width: 1300px;
+  margin: 0 auto 4rem auto;
+  padding: 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.pillars-image-wrapper {
+  width: 100%;
+  order: 1;
+}
+
+.pillars-image {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.pillars-text-content {
+  order: 2;
+}
+
+.pillars-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #131A35; /* COR NOVA */
+  margin-bottom: 0.5rem;
+}
+
+.pillars-tag {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #131A35; /* COR NOVA */
+  opacity: 0.7;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+.pillars-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pillar-item:first-child { border-top: 1px solid #eee; }
+
+.pillar-number {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #131A35; /* COR NOVA */
+  opacity: 0.5;
+}
+
+.pillar-text-wrapper { flex: 1; }
+
+.pillar-item-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #131A35; /* COR NOVA */
+  display: inline;
+  margin-right: 0.5em;
+}
+
+.pillar-item-text {
+  font-size: 1rem;
+  color: #131A35; /* COR NOVA */
+  opacity: 0.8;
+  display: inline;
+  line-height: 1.6;
+}
+
+@media (min-width: 769px) {
+  .pillars-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+  .pillars-text-content { order: 1; }
+  .pillars-image-wrapper { order: 2; }
+  .pillars-image { height: 600px; }
+}

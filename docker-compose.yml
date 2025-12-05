@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: cr-leather-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80" # Mapeia a porta 8080 do seu PC para a porta 80 do Nginx
+    restart: always

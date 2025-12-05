@@ -1,0 +1,63 @@
+/* src/components/TrendsSection/TrendsSection.css */
+
+.trends-section-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem 1.5rem;
+}
+
+.trends-divider {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+}
+
+.trends-text-content {
+  /* max-width: 800px; */
+  margin: 2.5rem auto 2.5rem auto;
+  padding: 0 0.5rem;
+}
+
+.trends-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #131A35; /* COR NOVA */
+}
+
+.trends-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #131A35; /* COR NOVA */
+  margin-bottom: 1rem;
+}
+
+.trends-text {
+  font-size: 0.95rem;
+  color: #131A35; /* COR NOVA */
+  opacity: 0.8;
+  line-height: 1.7;
+}
+
+.trends-text + .trends-text {
+  margin-top: 1rem;
+}
+
+.trends-image-wrapper {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.trends-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .trends-section-container { padding: 0 2rem 4rem 2rem; }
+}
+@media (max-width: 768px) {
+  .trends-image-wrapper { height: 200px; }
+}

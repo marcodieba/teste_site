@@ -1,0 +1,53 @@
+/* src/components/FeatureSection/FeatureSection.css */
+
+.feature-section-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+
+.feature-image-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.feature-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #131A35; /* COR NOVA */
+}
+
+.feature-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #131A35; /* COR NOVA */
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.feature-link {
+  color: #131A35; /* COR NOVA */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .feature-section-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  .feature-image-wrapper, .feature-content-wrapper { flex: 1; }
+  .feature-image-wrapper { margin-bottom: 0; }
+  .feature-section-container.image-right { flex-direction: row-reverse; }
+}

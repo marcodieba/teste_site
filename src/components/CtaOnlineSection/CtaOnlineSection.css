@@ -1,0 +1,73 @@
+/* src/components/CtaOnlineSection/CtaOnlineSection.css */
+
+.cta-online-container {
+  max-width: 1300px;
+  margin: 0 auto 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.cta-online-divider {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+  margin-bottom: 4rem;
+}
+
+.cta-online-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-online-tag {
+  color: #6a704c; /* Mantive o verde como destaque de marca */
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-online-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #131A35; /* COR NOVA */
+  margin-bottom: 1.5rem;
+}
+
+.cta-online-subtitle {
+  font-size: 1.1rem;
+  color: #131A35; /* COR NOVA */
+  opacity: 0.8;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.cta-online-button {
+  display: inline-block;
+  background-color: #131A35;
+  color: #fff; /* COR NOVA no texto do botão */
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 99px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.cta-online-button:hover {
+  background-color: #131A35;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cta-online-title { font-size: 2.5rem; }
+  .cta-online-subtitle { font-size: 1rem; }
+  .cta-online-container { margin-bottom: 3rem; }
+  .cta-online-divider { margin-bottom: 3rem; }
+}

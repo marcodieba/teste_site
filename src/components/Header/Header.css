@@ -1,0 +1,235 @@
+/* src/components/Header/Header.css */
+
+.header-container {
+  width: 100%;
+  padding: 1.5rem 3rem; /* Padding desktop */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Posição normal */
+  z-index: 1000;
+  background-color: #ffffff; /* Fundo branco, como na primeira imagem */
+  border-bottom: 1px solid #eee; /* Adiciona uma linha sutil */
+}
+
+/* --- Logo --- */
+.logo-text a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #131A35;
+}
+
+/* --- Links de Navegação (Desktop, no Header principal) --- */
+.nav-links {
+  display: none; /* Escondido no mobile */
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* --- Botão CTA (Desktop) --- */
+.cta-button {
+  display: none; /* Escondido no mobile */
+  background-color: #131A35;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 99px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: opacity 0.2s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.8;
+}
+
+/* --- Menu Hambúrguer (Mobile) --- */
+.menu-toggle {
+  display: flex; /* Visível no mobile */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 100%;
+  height: 3px;
+  background-color: #131A35;
+  border-radius: 2px;
+}
+
+/* * --- O NOVO MENU FLUTUANTE --- 
+ */
+.floating-nav {
+  display: none; /* Escondido no mobile */
+  position: fixed;
+  top: 1.5rem; /* Distância do topo */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  
+  padding: 0.9rem 1.8rem;
+  border-radius: 99px; /* Formato de pílula */
+  
+  /* Efeito de Vidro (Glassmorphism) */
+  background-color: rgba(255, 255, 255, 0.6); /* Fundo branco semi-transparente */
+  backdrop-filter: blur(12px); /* O "borrão" do fundo */
+  -webkit-backdrop-filter: blur(12px); /* Suporte para Safari */
+  
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil */
+  
+  gap: 2rem;
+  
+  /* Animação de entrada */
+  animation: fadeInDown 0.4s ease-out;
+}
+
+.floating-nav a {
+  text-decoration: none;
+  color: #131A35; /* Texto escuro para boa legibilidade */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.floating-nav a:hover {
+  color: #000;
+}
+
+/* --- Media Query para Tablet/Desktop --- */
+@media (min-width: 769px) {
+  
+  /* Esconda o hambúrguer no desktop */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Mostre os links e o botão no header principal */
+  .nav-links {
+    display: flex;
+  }
+  .cta-button {
+    display: inline-block;
+  }
+  
+  /* Mostre o menu flutuante no desktop */
+  .floating-nav {
+    display: flex;
+  }
+}
+
+/* --- Media Query para Mobile (Ajuste no Header) --- */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* --- Animação de Entrada --- */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Adicione ao final do Header.css */
+
+/* src/components/Header/Header.css */
+
+/* ... (Mantenha o CSS anterior do .header-container, etc.) ... */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* --- Estilos das Bandeiras (ATUALIZADO PARA IMAGENS) --- */
+.flag-selector {
+  display: flex;
+  gap: 0.8rem; /* Espaço entre as bandeirinhas */
+  align-items: center;
+}
+
+.flag-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex; /* Para centralizar a imagem */
+  align-items: center;
+  
+  opacity: 0.5; /* Bandeiras inativas ficam meio transparentes */
+  filter: grayscale(100%); /* Bandeiras inativas ficam preto e branco */
+  transition: all 0.3s ease;
+}
+
+/* Estilo da tag IMG dentro do botão */
+.flag-btn img {
+  width: 24px;  /* Largura da bandeira */
+  height: auto; /* Altura automática */
+  border-radius: 2px; /* Cantos levemente arredondados */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Sombra suave */
+  display: block;
+}
+
+.flag-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  filter: grayscale(0%); /* Volta a cor ao passar o mouse */
+}
+
+.flag-btn.active {
+  opacity: 1; 
+  transform: scale(1.15); /* Um pouco maior quando ativa */
+  filter: grayscale(0%); /* Colorida quando ativa */
+  border-bottom: 2px solid #131A35; /* (Opcional) Uma linha embaixo da ativa */
+  padding-bottom: 2px;
+}
+
+/* --- Ajuste no Menu Flutuante --- */
+.floating-nav {
+  display: none; 
+  /* ... (outros estilos do floating nav) ... */
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-separator {
+  color: #ccc;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Media Queries */
+@media (min-width: 769px) {
+  .floating-nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-actions {
+    display: none;
+  }
+}
