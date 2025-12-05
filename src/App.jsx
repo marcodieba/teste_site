@@ -57,12 +57,13 @@ const MainContent = () => {
         imagePosition="left"
       /> */}
       
-      <PillarsSection />
-      <QuoteBanner /> 
+       
       
       {/* Link: #contato (Contato) */}
       <section id="contato">
-        <ContactBanner />
+        <PillarsSection />
+        <QuoteBanner />
+        {/* <ContactBanner /> */}
       </section>
 
       <Footer />
