@@ -39,7 +39,8 @@ const MainContent = () => {
 
       {/* Link: #news (Newsletter / Novidades / Tendências) */}
       <section id="news">
-        <TrendsSection />     
+        <TrendsSection />
+        <PillarsSection />     
       </section>
 
       {/* Link: #compre (Compre On-line) */}
@@ -49,12 +50,12 @@ const MainContent = () => {
 
       <LaunchSection />     
       
-      <FeatureSection
+      {/* <FeatureSection
         title={t('eco.title')} 
         text={t('eco.text')}   
         image={ecoSealImage}
         imagePosition="left"
-      />
+      /> */}
       
       <PillarsSection />
       <QuoteBanner /> 
