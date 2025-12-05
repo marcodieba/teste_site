@@ -5,6 +5,7 @@
   padding: 1.5rem 3rem; /* Padding desktop */
   display: flex;
   justify-content: space-between;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   align-items: center;
   position: relative; /* Posição normal */
   z-index: 1000;
@@ -18,6 +19,11 @@
   font-weight: bold;
   text-decoration: none;
   color: #131A35;
+}
+
+.hero-cr-image{
+    width: 100px;
+    margin-bottom: 1rem;
 }
 
 /* --- Links de Navegação (Desktop, no Header principal) --- */

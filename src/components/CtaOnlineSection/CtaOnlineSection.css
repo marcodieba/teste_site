@@ -4,6 +4,7 @@
   max-width: 1300px;
   margin: 0 auto 4rem auto;
   padding: 0 1.5rem;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
 .cta-online-divider {
@@ -30,7 +31,7 @@
 }
 
 .cta-online-title {
-  font-family: "Times New Roman", Times, serif;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   font-size: 3.5rem;
   font-weight: 400;
   color: #131A35; /* COR NOVA */

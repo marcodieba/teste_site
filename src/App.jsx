@@ -39,8 +39,10 @@ const MainContent = () => {
 
       {/* Link: #news (Newsletter / Novidades / Tendências) */}
       <section id="news">
-        <TrendsSection />
-        <PillarsSection />     
+        {/* <TrendsSection />
+        <PillarsSection />
+              */}
+              <LaunchSection /> 
       </section>
 
       {/* Link: #compre (Compre On-line) */}
@@ -48,7 +50,7 @@ const MainContent = () => {
         <CtaOnlineSection />  
       </section>
 
-      <LaunchSection />     
+          
       
       {/* <FeatureSection
         title={t('eco.title')} 
@@ -60,11 +62,11 @@ const MainContent = () => {
        
       
       {/* Link: #contato (Contato) */}
-      <section id="contato">
+      {/* <section id="contato"> */}
         {/* <PillarsSection /> */}
-        <QuoteBanner />
+        {/* <QuoteBanner /> */}
         {/* <ContactBanner /> */}
-      </section>
+      {/* </section> */}
 
       <Footer />
     </div>

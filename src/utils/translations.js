@@ -7,7 +7,7 @@ export const translations = {
       about: "Sobre nós",
       buy: "Compre on-line",
       news: "Newsletter",
-      contact: "Contato",
+      contact: "Coleções",
       fone: "FONE:(51) 3561-0400",
       cta: "Entre em Contato"
     },
@@ -47,10 +47,10 @@ export const translations = {
       tag: "...",
       title: "Contato",
       subtitle: "Descubra o novo, escolha o autêntico e compre online com a CR Leather. Conheça abaixo nossas coleções e nossos lançamentos.",
-      button: "ENTRE EM CONTATO"
+      button: "Compre on-line"
     },
     launch: {
-      title: "LANÇAMENTO RECENTE COM FOTO AO LADO",
+      title: "Claudemir Lorenzi",
       season: `Com 46 anos de experiência no couro e mais de 30 dedicados à alta moda, Claudemir Lorenzi é o nome por trás da identidade criativa da CR Leather. Único brasileiro com uma peça de couro exposta no Museu da Itália, em Milão, destaque diversas vezes na Le Cuir Paris e segue reconhecido por suas criações autênticas e inovadoras.`,
       season2: "Sua visão combina técnica, sensibilidade e vanguarda, transformando couro em produtos de alto padrão que elevam qualquer coleção.",
       author: "Head of Data"
@@ -88,7 +88,7 @@ export const translations = {
       about: "About us",
       buy: "Shop Online",
       news: "Newsletter",
-      contact: "Contact",
+      contact: "Colections",
       fone: "PHONE:(51) 3561-0400",
       cta: "Get in Touch"
     },
@@ -132,10 +132,10 @@ export const translations = {
       tag: "...",
       title: "Get in touch",
       subtitle: "Discover the new, choose the authentic, and buy online with CR Leather. Discover our collections and launches below.",
-      button: "Contact us"
+      button: "SHOP ONLINE"
     },
     launch: {
-      title: "RECENT LAUNCH WITH PHOTO ASIDE",
+      title: "Claudemir Lorenzi",
       season: "With 46 years of experience in leather and more than 30 dedicated to high fashion, Claudemir Lorenzi is the name behind the creative identity of CR Leather. The only Brazilian with a leather piece exhibited at the Museum of Italy in Milan, he has been featured in several editions of Le Cuir Paris and continues to be recognized for his authentic and innovative creations.",
       season2: "His vision combines technique, sensitivity, and avant-garde, transforming leather into high-standard products that elevate any collection.",
       author: "Head of Data"
@@ -173,7 +173,7 @@ export const translations = {
       about: "Sobre nosotros",
       buy: "Compra online",
       news: "Boletín",
-      contact: "Contacto",
+      contact: "Colecciones",
       fone: "TELÉFONO:(51) 3561-0400",
       cta: "Ponerse en contacto"
     },
@@ -216,10 +216,10 @@ export const translations = {
       tag: "...",
       title: "Ponte en contacto",
       subtitle: "Descubre lo nuevo, elige lo auténtico y compra online con CR Leather. Conozca nuestras colecciones y lanzamientos a continuación.",
-      button: "Ponerse en contacto"
+      button: "Compra online"
     },
     launch: {
-      title: "LANZAMIENTO RECIENTE CON FOTO AL LADO",
+      title: "Claudemir Lorenzi",
       season: "Con 46 años de experiencia en el cuero y más de 30 dedicados a la alta moda, Claudemir Lorenzi es el nombre detrás de la identidad creativa de CR Leather. Único brasileño con una pieza de cuero expuesta en el Museo de Italia, en Milán, ha sido destacado en varias ediciones de Le Cuir Paris y sigue siendo reconocido por sus creaciones auténticas e innovadoras.",
       season2: "Su visión combina técnica, sensibilidad y vanguardia, transformando el cuero en productos de alto estándar que elevan cualquier colección.",
       author: "Head of Data"

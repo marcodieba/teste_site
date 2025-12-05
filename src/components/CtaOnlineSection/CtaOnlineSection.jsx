@@ -11,7 +11,7 @@ const CtaOnlineSection = () => {
         <span className="cta-online-tag">{t('ctaOnline.tag')}</span>
         <h2 className="cta-online-title">{t('ctaOnline.title')}</h2>
         <p className="cta-online-subtitle">{t('ctaOnline.subtitle')}</p>
-        <a href="#" className="cta-online-button">{t('ctaOnline.button')}</a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B555191058556&text&type=phone_number&app_absent=0" className="cta-online-button">{t('ctaOnline.button')}</a>
       </div>
     </section>
   );

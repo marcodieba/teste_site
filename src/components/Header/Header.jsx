@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../utils/translations';
+import heroCr from '../../assets/images/cr.png';
 
 const Header = () => {
   const { t, changeLanguage, lang } = useLanguage();
@@ -64,7 +65,13 @@ const Header = () => {
   return (
     <>
       <header className={headerClasses}>
-        <div className="logo-text"><a href="/">CR-LEATHER</a></div>
+        <div className="logo-text"><a href="/">
+                    <img 
+                    src={heroCr} 
+                    alt="CR Leather" 
+                    className="hero-cr-image" 
+                  />
+                  </a></div>
         
         <nav className="nav-links">
           {/* *** APLIQUE A FUNÇÃO onClick EM TODOS OS LINKS *** */}
@@ -75,10 +82,10 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <strong>{t('header.fone')}</strong>
+          {/* <strong>{t('header.fone')}</strong> */}
           <FlagSelector />
           {/* Também no botão CTA */}
-          <a href="#contato" className="cta-button" onClick={(e) => handleLinkClick(e, 'contato')}>{t('header.cta')}</a>
+          <a href="https://api.whatsapp.com/send/?phone=%2B555191058556&text&type=phone_number&app_absent=0" className="cta-button" onClick={(e) => handleLinkClick(e, 'contato')}>{t('header.cta')}</a>
         </div>
 
         <button className="menu-toggle"><span></span><span></span><span></span></button>
