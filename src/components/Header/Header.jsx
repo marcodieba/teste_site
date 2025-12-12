@@ -78,7 +78,7 @@ const Header = () => {
           <a href="#sobre" onClick={(e) => handleLinkClick(e, 'sobre')}>{t('header.about')}</a>
           <a href="#compre" onClick={(e) => handleLinkClick(e, 'compre')}>{t('header.buy')}</a>
           <a href="#news" onClick={(e) => handleLinkClick(e, 'news')}>{t('header.news')}</a>
-          <a href="#contato" onClick={(e) => handleLinkClick(e, 'contato')}>{t('header.contact')}</a>
+          <a href="#colecoes" onClick={(e) => handleLinkClick(e, 'colecoes')}>{t('header.contact')}</a>
         </nav>
 
         <div className="header-actions">
@@ -97,7 +97,7 @@ const Header = () => {
           <a href="#sobre" onClick={(e) => handleLinkClick(e, 'sobre')}>{t('header.about')}</a>
           <a href="#compre" onClick={(e) => handleLinkClick(e, 'compre')}>{t('header.buy')}</a>
           <a href="#news" onClick={(e) => handleLinkClick(e, 'news')}>{t('header.news')}</a>
-          <a href="#contato" onClick={(e) => handleLinkClick(e, 'contato')}>{t('header.contact')}</a>
+          <a href="#colecoes" onClick={(e) => handleLinkClick(e, 'colecoes')}>{t('header.contact')}</a>
           
           <div className="nav-separator">|</div>
           

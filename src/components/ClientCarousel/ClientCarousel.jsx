@@ -4,7 +4,10 @@ import { useLanguage } from '../../context/LanguageContext';
 
 const ClientCarousel = () => {
   const { t } = useLanguage();
-  const logos = ['logoipsum', 'logoipsum', 'logoipsum', 'logoipsum', 'logoipsum', 'logoipsum'];
+  const logos = ['Big Croco NY', 'Mini Croco NY', 'Camurça', 'Camurça vegetalizada', 'Fractalli', 'Floater Dual','Cabra Glove','Tie-Dye'
+                  ,'Camurçina', 'Alligator', 'Napa Glove', 'Snake Onda', 'Mini Anaconda', 'Pakderme', 'Camurça Croco', 'Floral', 'Estonado', 
+                  'Impressão digital','Vestuário'
+  ];
 
   return (
     <section className="client-section">

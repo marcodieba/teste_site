@@ -10,9 +10,9 @@ import heroMonitorBase from '../../assets/images/hero-monitor-base.jpg'; // <-- 
 import heroLogo from '../../assets/images/logo.png';
 // 2. Importe as NOVAS imagens que vão passar dentro da tela
 // (Certifique-se de que essas imagens existem na pasta)
-import slide1 from '../../assets/images/hero-slide-1.jpg';
-import slide2 from '../../assets/images/hero-slide-2.jpg';
-import slide3 from '../../assets/images/hero-slide-3.jpg';
+import slide1 from '../../assets/images/hero-slide-1.png';
+import slide2 from '../../assets/images/hero-slide-2.png';
+import slide3 from '../../assets/images/hero-slide-3.png';
 
 const Hero = () => {
   const { t } = useLanguage();

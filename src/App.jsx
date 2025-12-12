@@ -30,11 +30,15 @@ const MainContent = () => {
       {/* O Hero geralmente é o topo, não precisa de ID específico a menos que tenha link 'Home' */}
       <Hero />
       
-      <ClientCarousel />
+      {/* <ClientCarousel /> */}
+      <section id="colecoes">
+        <ClientCarousel />  
+      </section>
       
       {/* Link: #sobre (Sobre nós) */}
       <section id="sobre">
-        <BenefitsSection />   
+        <BenefitsSection /> 
+        <PillarsSection />  
       </section>
 
       {/* Link: #news (Newsletter / Novidades / Tendências) */}
@@ -49,6 +53,9 @@ const MainContent = () => {
       <section id="compre">
         <CtaOnlineSection />  
       </section>
+
+      
+      
 
           
       
