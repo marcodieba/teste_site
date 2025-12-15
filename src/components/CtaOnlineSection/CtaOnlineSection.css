@@ -31,9 +31,9 @@
 }
 
 .cta-online-title {
-      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   font-size: 3.5rem;
-  font-weight: 400;
+  font-weight: bold;
   color: #131A35; /* COR NOVA */
   margin-bottom: 1.5rem;
 }

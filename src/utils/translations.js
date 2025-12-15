@@ -44,7 +44,7 @@ export const translations = {
       text2: "Esse olhar estratégico garante variedade, relevância e inovação em cada coleção."
     },
     ctaOnline: {
-      tag: "...",
+      tag: "",
       title: "Contato",
       subtitle: "Descubra o novo, escolha o autêntico e compre online com a CR Leather. Conheça abaixo nossas coleções e nossos lançamentos.",
       button: "Compre on-line"
@@ -53,7 +53,7 @@ export const translations = {
       title: "Claudemir Lorenzi",
       season: `Com 46 anos de experiência no couro e mais de 30 dedicados à alta moda, Claudemir Lorenzi é o nome por trás da identidade criativa da CR Leather. Único brasileiro com uma peça de couro exposta no Museu da Itália, em Milão, destaque diversas vezes na Le Cuir Paris e segue reconhecido por suas criações autênticas e inovadoras.`,
       season2: "Sua visão combina técnica, sensibilidade e vanguarda, transformando couro em produtos de alto padrão que elevam qualquer coleção.",
-      author: "Head of Data"
+      author: "Estilista CR Leather"
     },
     pillars: {
       title: "Nossos pilares",
@@ -138,7 +138,7 @@ export const translations = {
       title: "Claudemir Lorenzi",
       season: "With 46 years of experience in leather and more than 30 dedicated to high fashion, Claudemir Lorenzi is the name behind the creative identity of CR Leather. The only Brazilian with a leather piece exhibited at the Museum of Italy in Milan, he has been featured in several editions of Le Cuir Paris and continues to be recognized for his authentic and innovative creations.",
       season2: "His vision combines technique, sensitivity, and avant-garde, transforming leather into high-standard products that elevate any collection.",
-      author: "Head of Data"
+      author: "CR Leather Designer"
     },
     pillars: {
       title: "Our Pillars",
@@ -222,7 +222,7 @@ export const translations = {
       title: "Claudemir Lorenzi",
       season: "Con 46 años de experiencia en el cuero y más de 30 dedicados a la alta moda, Claudemir Lorenzi es el nombre detrás de la identidad creativa de CR Leather. Único brasileño con una pieza de cuero expuesta en el Museo de Italia, en Milán, ha sido destacado en varias ediciones de Le Cuir Paris y sigue siendo reconocido por sus creaciones auténticas e innovadoras.",
       season2: "Su visión combina técnica, sensibilidad y vanguardia, transformando el cuero en productos de alto estándar que elevan cualquier colección.",
-      author: "Head of Data"
+      author: "Estilista de CR Leather"
     },
     pillars: {
       title: "Nuestros pilares",

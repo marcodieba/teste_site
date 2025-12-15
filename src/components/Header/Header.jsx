@@ -75,10 +75,10 @@ const Header = () => {
         
         <nav className="nav-links">
           {/* *** APLIQUE A FUNÇÃO onClick EM TODOS OS LINKS *** */}
-          <a href="#sobre" onClick={(e) => handleLinkClick(e, 'sobre')}>{t('header.about')}</a>
-          <a href="#compre" onClick={(e) => handleLinkClick(e, 'compre')}>{t('header.buy')}</a>
-          <a href="#news" onClick={(e) => handleLinkClick(e, 'news')}>{t('header.news')}</a>
           <a href="#colecoes" onClick={(e) => handleLinkClick(e, 'colecoes')}>{t('header.contact')}</a>
+          <a href="#sobre" onClick={(e) => handleLinkClick(e, 'sobre')}>{t('header.about')}</a>
+          <a href="#news" onClick={(e) => handleLinkClick(e, 'news')}>{t('header.news')}</a>
+          <a href="#compre" onClick={(e) => handleLinkClick(e, 'compre')}>{t('header.buy')}</a>
         </nav>
 
         <div className="header-actions">
@@ -94,11 +94,10 @@ const Header = () => {
       {isFloating && (
         <nav className="floating-nav">
           {/* *** E AQUI TAMBÉM NO MENU FLUTUANTE *** */}
-          <a href="#sobre" onClick={(e) => handleLinkClick(e, 'sobre')}>{t('header.about')}</a>
-          <a href="#compre" onClick={(e) => handleLinkClick(e, 'compre')}>{t('header.buy')}</a>
-          <a href="#news" onClick={(e) => handleLinkClick(e, 'news')}>{t('header.news')}</a>
           <a href="#colecoes" onClick={(e) => handleLinkClick(e, 'colecoes')}>{t('header.contact')}</a>
-          
+          <a href="#sobre" onClick={(e) => handleLinkClick(e, 'sobre')}>{t('header.about')}</a>
+          <a href="#news" onClick={(e) => handleLinkClick(e, 'news')}>{t('header.news')}</a>
+          <a href="#compre" onClick={(e) => handleLinkClick(e, 'compre')}>{t('header.buy')}</a>
           <div className="nav-separator">|</div>
           
           <FlagSelector />
