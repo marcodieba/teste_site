@@ -73,7 +73,7 @@ const Header = () => {
                   />
                   </a></div>
         
-        <nav className="nav-links">
+        <nav style={{marginLeft:'10%'}} className="nav-links">
           {/* *** APLIQUE A FUNÇÃO onClick EM TODOS OS LINKS *** */}
           <a href="#colecoes" onClick={(e) => handleLinkClick(e, 'colecoes')}>{t('header.contact')}</a>
           <a href="#sobre" onClick={(e) => handleLinkClick(e, 'sobre')}>{t('header.about')}</a>
@@ -85,7 +85,7 @@ const Header = () => {
           {/* <strong>{t('header.fone')}</strong> */}
           <FlagSelector />
           {/* Também no botão CTA */}
-          <a href="https://api.whatsapp.com/send/?phone=%2B555191058556&text&type=phone_number&app_absent=0" className="cta-button" onClick={(e) => handleLinkClick(e, 'contato')}>{t('header.cta')}</a>
+          <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B555191058556&text&type=phone_number&app_absent=0" className="cta-button" >{t('header.cta')}</a>
         </div>
 
         <button className="menu-toggle"><span></span><span></span><span></span></button>

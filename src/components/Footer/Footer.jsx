@@ -13,7 +13,7 @@ const Footer = () => {
           <img src={logo} alt="Logo" className="logo-footer" />
         </div>
 
-        <p style={{textAlign: 'center', fontSize: '1.0rem', color: '#5c5b5bff'}}>
+        <p style={{textAlign: 'center', fontSize: '1.0rem', color: '#5c5b5bff', marginLeft:'10%'}}>
             {t('footer.description')}
             <p style={{fontSize: '0.8rem', color: '#888'}}>
               {t('footer.rights')}
@@ -21,7 +21,7 @@ const Footer = () => {
         </p>
         <div className="footer-socials">
           <a href="https://www.instagram.com/crleather.oficial?igsh=Z3NqZmJ5M3QwYjhn"><FaInstagram /></a>
-          <a href="https://www.facebook.com/profile.php?id=61584589740483&sk=about_details"><FaFacebookF /></a>
+          <a href="https://www.facebook.com/profile.php?id=61573162852151&locale=pt_BR"><FaFacebookF /></a>
           <a href="https://api.whatsapp.com/send/?phone=%2B555191058556&text&type=phone_number&app_absent=0"><FaWhatsapp /></a>
           <a href="https://www.linkedin.com/company/cr-leather"><FaLinkedin /></a>
         </div>

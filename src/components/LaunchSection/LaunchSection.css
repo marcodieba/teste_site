@@ -55,6 +55,7 @@
   color: #131A35; /* COR NOVA */
   opacity: 0.6;
   font-weight: bold;
+  padding-left: 10px;
 }
 
 @media (min-width: 769px) {
