@@ -239,3 +239,23 @@
     display: none;
   }
 }
+
+/* ===== FIX MINIMO PARA MENU MOBILE ===== */
+@media (max-width: 768px) {
+  .nav-links.open {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1500;
+  }
+
+  .menu-toggle {
+    z-index: 1600;
+  }
+}
+
