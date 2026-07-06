@@ -1,27 +1,22 @@
-// src/components/Header/Header.jsx
-
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { useLanguage } from '../../context/LanguageContext';
 import heroCr from '../../assets/images/cr.png';
+import catalogoPdf from '../../assets/2026_CATALOGO_CR_LEATHER.pdf';
 
 const Header = () => {
   const { t, changeLanguage, lang } = useLanguage();
 
   const [isSticky, setIsSticky] = useState(false);
   const [isFloating, setIsFloating] = useState(false);
-
-  // 🔴 ADIÇÃO CRUCIAL (1)
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) setIsSticky(true);
-      else setIsSticky(false);
-
-      if (window.scrollY > 150) setIsFloating(true);
-      else setIsFloating(false);
+      setIsSticky(window.scrollY > 10);
+      setIsFloating(window.scrollY > 150);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -34,23 +29,20 @@ const Header = () => {
     es: "https://flagcdn.com/w40/es.png"
   };
 
-  // 🔴 FECHA MENU AO CLICAR (opcional, mas recomendado)
   const handleLinkClick = (e, targetId) => {
     e.preventDefault();
-    setMenuOpen(false); // <-- ADIÇÃO CRUCIAL (2)
+    setMenuOpen(false);
 
     const element = document.getElementById(targetId);
-    if (element) {
-      const headerOffset = 100;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerOffset;
+    if (!element) return;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }
+    const headerOffset = 100;
+    const y =
+      element.getBoundingClientRect().top +
+      window.scrollY -
+      headerOffset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   const FlagSelector = () => (
@@ -72,15 +64,10 @@ const Header = () => {
       <header className={headerClasses}>
         <div className="logo-text">
           <a href="/">
-            <img
-              src={heroCr}
-              alt="CR Leather"
-              className="hero-cr-image"
-            />
+            <img src={heroCr} alt="CR Leather" className="hero-cr-image" />
           </a>
         </div>
 
-        {/* 🔴 CLASSE CONDICIONAL (3) */}
         <nav
           style={{ marginLeft: '10%' }}
           className={`nav-links ${menuOpen ? 'open' : ''}`}
@@ -89,12 +76,26 @@ const Header = () => {
           <a href="#sobre" onClick={(e) => handleLinkClick(e, 'sobre')}>{t('header.about')}</a>
           <a href="#news" onClick={(e) => handleLinkClick(e, 'news')}>{t('header.news')}</a>
           <a href="#compre" onClick={(e) => handleLinkClick(e, 'compre')}>{t('header.buy')}</a>
+
+          <a href={catalogoPdf} download="2026 CATALOGO CR LEATHER.pdf">
+            {t('header.catalog')}
+          </a>
         </nav>
 
         <div className="header-actions">
           <FlagSelector />
+
+          {/* <a
+            href={catalogoPdf}
+            download="2026 CATALOGO CR LEATHER.pdf"
+            className="cta-button"
+          >
+            Baixar Catálago PDF
+          </a> */}
+
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://api.whatsapp.com/send/?phone=%2B555191058556"
             className="cta-button"
           >
@@ -102,7 +103,6 @@ const Header = () => {
           </a>
         </div>
 
-        {/* 🔴 onClick ADICIONADO (4) */}
         <button
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -114,11 +114,12 @@ const Header = () => {
       </header>
 
       {isFloating && (
-        <nav className="floating-nav">
+        <nav className="floating-nav desktop-only">
           <a href="#colecoes" onClick={(e) => handleLinkClick(e, 'colecoes')}>{t('header.contact')}</a>
           <a href="#sobre" onClick={(e) => handleLinkClick(e, 'sobre')}>{t('header.about')}</a>
           <a href="#news" onClick={(e) => handleLinkClick(e, 'news')}>{t('header.news')}</a>
           <a href="#compre" onClick={(e) => handleLinkClick(e, 'compre')}>{t('header.buy')}</a>
+          <a href={catalogoPdf} download="catalogo-cr-leather.pdf">{t('header.catalog')}</a>
           <div className="nav-separator">|</div>
           <FlagSelector />
         </nav>

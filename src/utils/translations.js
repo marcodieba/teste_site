@@ -9,7 +9,8 @@ export const translations = {
       news: "Newsletter",
       contact: "Coleções",
       fone: "FONE:(51) 3561-0400",
-      cta: "Entre em Contato"
+      cta: "Entre em Contato",
+      catalog:"Catálogo PDF"
     },
     hero: {
       title: "CR LEATHER",
@@ -90,7 +91,8 @@ export const translations = {
       news: "Newsletter",
       contact: "Colections",
       fone: "PHONE:(51) 3561-0400",
-      cta: "Get in Touch"
+      cta: "Get in Touch",
+      catalog:"Catalog PDF"
     },
     hero: {
       title: "CR LEATHER",
@@ -175,7 +177,8 @@ export const translations = {
       news: "Boletín",
       contact: "Colecciones",
       fone: "TELÉFONO:(51) 3561-0400",
-      cta: "Ponerse en contacto"
+      cta: "Ponerse en contacto",
+      catalog:"Catálogo PDF"
     },
     hero: {
       title: "CR LEATHER",
